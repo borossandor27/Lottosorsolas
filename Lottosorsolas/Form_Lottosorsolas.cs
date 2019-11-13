@@ -80,6 +80,11 @@ namespace Lottosorsolas
 
         private void button_Sorsolas_Click(object sender, EventArgs e)
         {
+            if (jatszott_Szamok.Count < sorsolhato_Szamok_Szama)
+            {
+                MessageBox.Show("Még nem választotta " + sorsolhato_Szamok_Szama + " számot!");
+                return;
+            }
             //-- Kezdődik a sorsolás ----------------------------------------------------------------------------
             Random r = new Random();
             int db = 0;
@@ -114,6 +119,21 @@ namespace Lottosorsolas
             {
                 label_Talalat.Text = "Találat -> Önnek " + talalat.ToString() + " találata van!";
             }
+        }
+
+        private void label_Megjatszott_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_Nyeroszamok_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_Talalat_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

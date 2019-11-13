@@ -82,6 +82,7 @@
             this.label_Nyeroszamok.Size = new System.Drawing.Size(83, 13);
             this.label_Nyeroszamok.TabIndex = 1;
             this.label_Nyeroszamok.Text = "Nyerőszámok ->";
+            this.label_Nyeroszamok.Click += new System.EventHandler(this.label_Nyeroszamok_Click);
             // 
             // label_Megjatszott
             // 
@@ -91,6 +92,7 @@
             this.label_Megjatszott.Size = new System.Drawing.Size(73, 13);
             this.label_Megjatszott.TabIndex = 2;
             this.label_Megjatszott.Text = "Megjátszott ->";
+            this.label_Megjatszott.Click += new System.EventHandler(this.label_Megjatszott_Click);
             // 
             // label_Talalat
             // 
@@ -101,6 +103,7 @@
             this.label_Talalat.Size = new System.Drawing.Size(51, 13);
             this.label_Talalat.TabIndex = 3;
             this.label_Talalat.Text = "Találat ->";
+            this.label_Talalat.Click += new System.EventHandler(this.label_Talalat_Click);
             // 
             // Form_Lottosorsolas
             // 
